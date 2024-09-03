@@ -1,0 +1,55 @@
+:root {
+    --body: white;
+    --textColor: #242424;
+    --borderColor:black
+  }
+  
+.darkmode {
+    --body: rgb(33, 35, 40);
+    --textColor: white;
+    --borderColor:white
+  }
+body{
+    background-color: var(--body);
+    color: var(--textColor);
+}
+
+.faq-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px;
+}
+.reverse-icon{
+    transition: 0.5s;
+}
+.faq{
+    border: 1px solid var(--borderColor);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.faq-des{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s ease-in;
+}
+.faq.active .reverse-icon{
+    transform: rotate(-180deg);
+}
+
+.faq.active .faq-des{
+    max-height: 100vh;
+}
+
+.btn{
+    margin: 0 auto;
+    display: block;
+}
+.btn .light{
+    border: none;
+}
+
+.darklogo{
+    background-image: url("moon-fill.svg");
+}
