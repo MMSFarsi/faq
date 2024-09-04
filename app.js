@@ -1,4 +1,4 @@
-const faq = document.querySelector(".faq");
+const faq = document.querySelectorAll(".faq");
 const reverse = document.querySelector(".reverse-icon");
 const faqTitle = document.querySelectorAll(".faq-title");
 
